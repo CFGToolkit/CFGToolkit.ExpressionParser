@@ -15,7 +15,7 @@ Support for C language expressions</Description>
     <PackageTags></PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <Version>1.0.0-alfa-01</Version>
+    <Version>1.0.0-alfa-02</Version>
   </PropertyGroup>
 
   <ItemGroup>
