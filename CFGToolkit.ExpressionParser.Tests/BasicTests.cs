@@ -28,6 +28,7 @@ namespace CFGToolkit.ExpressionParser.Tests
                 new object[] { @"a == 1 ? 3 : 4" },
                 new object[] { @"a == 1 ? b == 3 ? 4 : 3 : 1" },
                 new object[] { @"a[1] * 3 == 4" },
+                new object[] { @"a[x+3*4] * 3 == 4" },
                 new object[] { @"!(a[1] * 3 == 4)" },
                 new object[] { @"!false" },
                 new object[] { @"!true" },

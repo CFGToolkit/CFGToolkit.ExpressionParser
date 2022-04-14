@@ -11,7 +11,7 @@ namespace CFGToolkit.ExpressionParser.Languages.C
            Parser.Sequence<CharToken, SyntaxNode>("expression#1", (args) => CreateSyntaxNode(false, true, nameof(expression), args), new Lazy<IParser<CharToken>>(() => expression_10.Value))));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> conditional_expression =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("conditional_expression", (args) => CreateSyntaxNode(false, true, nameof(conditional_expression), args), new Lazy<IParser<CharToken>>(() => expression_10.Value), new Lazy<IParser<CharToken>>(() => _keyword_1699417474_True.Value), new Lazy<IParser<CharToken>>(() => expression.Value), new Lazy<IParser<CharToken>>(() => _keyword_1389587909_True.Value), new Lazy<IParser<CharToken>>(() => expression.Value)));
+          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("conditional_expression", (args) => CreateSyntaxNode(false, true, nameof(conditional_expression), args), new Lazy<IParser<CharToken>>(() => expression_10.Value), new Lazy<IParser<CharToken>>(() => _keyword_144107524_True.Value), new Lazy<IParser<CharToken>>(() => expression.Value), new Lazy<IParser<CharToken>>(() => _keyword_1552242596_True.Value), new Lazy<IParser<CharToken>>(() => expression.Value)));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> expression_10 =
           new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("expression_10", (args) => CreateSyntaxNode(false, true, nameof(expression_10), args), new Lazy<IParser<CharToken>>(() => expression_9.Value), new Lazy<IParser<CharToken>>(() => expression_10_many.Value.Many(greedy: true))));
@@ -74,42 +74,42 @@ namespace CFGToolkit.ExpressionParser.Languages.C
           new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("expression_1_many", (args) => CreateSyntaxNode(false, true, nameof(expression_1_many), args), new Lazy<IParser<CharToken>>(() => binary_operator_1.Value), new Lazy<IParser<CharToken>>(() => expression_primary.Value)));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> binary_operator_1 =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Or("binary_operator_1", Parser.Sequence<CharToken, SyntaxNode>("binary_operator_1#0", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_1), args), new Lazy<IParser<CharToken>>(() => _keyword_831473964_True.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_1#1", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_1), args), new Lazy<IParser<CharToken>>(() => _keyword_697127080_True.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_1#2", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_1), args), new Lazy<IParser<CharToken>>(() => _keyword_2106348314_True.Value))));
+          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Or("binary_operator_1", Parser.Sequence<CharToken, SyntaxNode>("binary_operator_1#0", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_1), args), new Lazy<IParser<CharToken>>(() => _keyword_64525627_True.Value)),
+           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_1#1", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_1), args), new Lazy<IParser<CharToken>>(() => _keyword_1998404296_True.Value)),
+           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_1#2", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_1), args), new Lazy<IParser<CharToken>>(() => _keyword_1761918440_True.Value))));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> binary_operator_2 =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.XOr("binary_operator_2", Parser.Sequence<CharToken, SyntaxNode>("binary_operator_2#0", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_2), args), new Lazy<IParser<CharToken>>(() => _keyword_1371270433_True.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_2#1", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_2), args), new Lazy<IParser<CharToken>>(() => _keyword_1919522576_True.Value))));
+          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.XOr("binary_operator_2", Parser.Sequence<CharToken, SyntaxNode>("binary_operator_2#0", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_2), args), new Lazy<IParser<CharToken>>(() => _keyword_2058483605_True.Value)),
+           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_2#1", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_2), args), new Lazy<IParser<CharToken>>(() => _keyword_796676709_True.Value))));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> binary_operator_3 =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.XOr("binary_operator_3", Parser.Sequence<CharToken, SyntaxNode>("binary_operator_3#0", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_3), args), new Lazy<IParser<CharToken>>(() => _keyword_1654928515_True.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_3#1", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_3), args), new Lazy<IParser<CharToken>>(() => _keyword_421614407_True.Value))));
+          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.XOr("binary_operator_3", Parser.Sequence<CharToken, SyntaxNode>("binary_operator_3#0", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_3), args), new Lazy<IParser<CharToken>>(() => _keyword_1437212064_True.Value)),
+           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_3#1", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_3), args), new Lazy<IParser<CharToken>>(() => _keyword_1434257148_True.Value))));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> binary_operator_4 =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.XOr("binary_operator_4", Parser.Sequence<CharToken, SyntaxNode>("binary_operator_4#0", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_4), args), new Lazy<IParser<CharToken>>(() => _keyword_825600993_True.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_4#1", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_4), args), new Lazy<IParser<CharToken>>(() => _keyword_1026637572_True.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_4#2", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_4), args), new Lazy<IParser<CharToken>>(() => _keyword_1333369729_True.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_4#3", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_4), args), new Lazy<IParser<CharToken>>(() => _keyword_2015880819_True.Value))));
+          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.XOr("binary_operator_4", Parser.Sequence<CharToken, SyntaxNode>("binary_operator_4#0", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_4), args), new Lazy<IParser<CharToken>>(() => _keyword_1290577619_True.Value)),
+           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_4#1", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_4), args), new Lazy<IParser<CharToken>>(() => _keyword_256657930_True.Value)),
+           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_4#2", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_4), args), new Lazy<IParser<CharToken>>(() => _keyword_17673215_True.Value)),
+           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_4#3", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_4), args), new Lazy<IParser<CharToken>>(() => _keyword_396669534_True.Value))));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> binary_operator_5 =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Or("binary_operator_5", Parser.Sequence<CharToken, SyntaxNode>("binary_operator_5#0", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_5), args), new Lazy<IParser<CharToken>>(() => _keyword_620876394_True.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_5#1", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_5), args), new Lazy<IParser<CharToken>>(() => _keyword_864074195_True.Value))));
+          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Or("binary_operator_5", Parser.Sequence<CharToken, SyntaxNode>("binary_operator_5#0", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_5), args), new Lazy<IParser<CharToken>>(() => _keyword_1121862642_True.Value)),
+           Parser.Sequence<CharToken, SyntaxNode>("binary_operator_5#1", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_5), args), new Lazy<IParser<CharToken>>(() => _keyword_1580983070_True.Value))));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> binary_operator_6 =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("binary_operator_6", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_6), args), new Lazy<IParser<CharToken>>(() => _keyword_1480909061_True.Value)));
+          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("binary_operator_6", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_6), args), new Lazy<IParser<CharToken>>(() => _keyword_1259555743_True.Value)));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> binary_operator_7 =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("binary_operator_7", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_7), args), new Lazy<IParser<CharToken>>(() => _keyword_158453521_True.Value)));
+          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("binary_operator_7", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_7), args), new Lazy<IParser<CharToken>>(() => _keyword_1774109070_True.Value)));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> binary_operator_8 =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("binary_operator_8", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_8), args), new Lazy<IParser<CharToken>>(() => _keyword_1487637857_True.Value)));
+          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("binary_operator_8", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_8), args), new Lazy<IParser<CharToken>>(() => _keyword_1812504499_True.Value)));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> binary_operator_9 =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("binary_operator_9", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_9), args), new Lazy<IParser<CharToken>>(() => _keyword_1075906301_True.Value)));
+          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("binary_operator_9", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_9), args), new Lazy<IParser<CharToken>>(() => _keyword_1242243799_True.Value)));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> binary_operator_10 =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("binary_operator_10", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_10), args), new Lazy<IParser<CharToken>>(() => _keyword_677592720_True.Value)));
+          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("binary_operator_10", (args) => CreateSyntaxNode(false, true, nameof(binary_operator_10), args), new Lazy<IParser<CharToken>>(() => _keyword_582333413_True.Value)));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> expression_primary =
           new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.XOr("expression_primary", Parser.Sequence<CharToken, SyntaxNode>("expression_primary#0", (args) => CreateSyntaxNode(false, true, nameof(expression_primary), args), new Lazy<IParser<CharToken>>(() => primary.Value), new Lazy<IParser<CharToken>>(() => unary_postfix_operator.Value)),
@@ -118,128 +118,117 @@ namespace CFGToolkit.ExpressionParser.Languages.C
 
         public static Lazy<IParser<CharToken, SyntaxNode>> primary =
           new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.XOr("primary", Parser.Sequence<CharToken, SyntaxNode>("primary#0", (args) => CreateSyntaxNode(false, true, nameof(primary), args), new Lazy<IParser<CharToken>>(() => number.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("primary#1", (args) => CreateSyntaxNode(false, true, nameof(primary), args), new Lazy<IParser<CharToken>>(() => variable.Value), new Lazy<IParser<CharToken>>(() => _keyword_1437607488_True.Value), new Lazy<IParser<CharToken>>(() => variable_or_index.Value), new Lazy<IParser<CharToken>>(() => _keyword_523116841_True.Value)),
+           Parser.Sequence<CharToken, SyntaxNode>("primary#1", (args) => CreateSyntaxNode(false, true, nameof(primary), args), new Lazy<IParser<CharToken>>(() => variable.Value), new Lazy<IParser<CharToken>>(() => _keyword_364947234_True.Value), new Lazy<IParser<CharToken>>(() => expression.Value), new Lazy<IParser<CharToken>>(() => _keyword_1365747384_True.Value)),
            Parser.Sequence<CharToken, SyntaxNode>("primary#2", (args) => CreateSyntaxNode(false, true, nameof(primary), args), new Lazy<IParser<CharToken>>(() => variable.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("primary#3", (args) => CreateSyntaxNode(false, true, nameof(primary), args), new Lazy<IParser<CharToken>>(() => _keyword_1794083400_True.Value), new Lazy<IParser<CharToken>>(() => expression.Value), new Lazy<IParser<CharToken>>(() => _keyword_542649374_True.Value))));
-
-        public static Lazy<IParser<CharToken, SyntaxNode>> variable_or_index =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Or("variable_or_index", Parser.Sequence<CharToken, SyntaxNode>("variable_or_index#0", (args) => CreateSyntaxNode(false, true, nameof(variable_or_index), args), new Lazy<IParser<CharToken>>(() => variable.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("variable_or_index#1", (args) => CreateSyntaxNode(false, true, nameof(variable_or_index), args), new Lazy<IParser<CharToken>>(() => index.Value))));
-
-        public static Lazy<IParser<CharToken, SyntaxNode>> index =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("index", (args) => CreateSyntaxNode(false, true, nameof(index), args), new Lazy<IParser<CharToken>>(() => _keyword_1175017254_True.Value)));
+           Parser.Sequence<CharToken, SyntaxNode>("primary#3", (args) => CreateSyntaxNode(false, true, nameof(primary), args), new Lazy<IParser<CharToken>>(() => _keyword_523898322_True.Value), new Lazy<IParser<CharToken>>(() => expression.Value), new Lazy<IParser<CharToken>>(() => _keyword_414244986_True.Value))));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> unary_prefix_operator =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.XOr("unary_prefix_operator", Parser.Sequence<CharToken, SyntaxNode>("unary_prefix_operator#0", (args) => CreateSyntaxNode(false, true, nameof(unary_prefix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_557789934_True.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("unary_prefix_operator#1", (args) => CreateSyntaxNode(false, true, nameof(unary_prefix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_1077892703_True.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("unary_prefix_operator#2", (args) => CreateSyntaxNode(false, true, nameof(unary_prefix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_1371270433_True.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("unary_prefix_operator#3", (args) => CreateSyntaxNode(false, true, nameof(unary_prefix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_1919522576_True.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("unary_prefix_operator#4", (args) => CreateSyntaxNode(false, true, nameof(unary_prefix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_598395658_True.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("unary_prefix_operator#5", (args) => CreateSyntaxNode(false, true, nameof(unary_prefix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_1800071565_True.Value))));
+          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.XOr("unary_prefix_operator", Parser.Sequence<CharToken, SyntaxNode>("unary_prefix_operator#0", (args) => CreateSyntaxNode(false, true, nameof(unary_prefix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_1425623108_True.Value)),
+           Parser.Sequence<CharToken, SyntaxNode>("unary_prefix_operator#1", (args) => CreateSyntaxNode(false, true, nameof(unary_prefix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_236175257_True.Value)),
+           Parser.Sequence<CharToken, SyntaxNode>("unary_prefix_operator#2", (args) => CreateSyntaxNode(false, true, nameof(unary_prefix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_2058483605_True.Value)),
+           Parser.Sequence<CharToken, SyntaxNode>("unary_prefix_operator#3", (args) => CreateSyntaxNode(false, true, nameof(unary_prefix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_796676709_True.Value)),
+           Parser.Sequence<CharToken, SyntaxNode>("unary_prefix_operator#4", (args) => CreateSyntaxNode(false, true, nameof(unary_prefix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_1921598536_True.Value)),
+           Parser.Sequence<CharToken, SyntaxNode>("unary_prefix_operator#5", (args) => CreateSyntaxNode(false, true, nameof(unary_prefix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_1750419029_True.Value))));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> unary_postfix_operator =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.XOr("unary_postfix_operator", Parser.Sequence<CharToken, SyntaxNode>("unary_postfix_operator#0", (args) => CreateSyntaxNode(false, true, nameof(unary_postfix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_557789934_True.Value)),
-           Parser.Sequence<CharToken, SyntaxNode>("unary_postfix_operator#1", (args) => CreateSyntaxNode(false, true, nameof(unary_postfix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_1077892703_True.Value))));
+          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.XOr("unary_postfix_operator", Parser.Sequence<CharToken, SyntaxNode>("unary_postfix_operator#0", (args) => CreateSyntaxNode(false, true, nameof(unary_postfix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_1425623108_True.Value)),
+           Parser.Sequence<CharToken, SyntaxNode>("unary_postfix_operator#1", (args) => CreateSyntaxNode(false, true, nameof(unary_postfix_operator), args), new Lazy<IParser<CharToken>>(() => _keyword_236175257_True.Value))));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> variable =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("variable", (args) => CreateSyntaxNode(false, true, nameof(variable), args), new Lazy<IParser<CharToken>>(() => _keyword_1410453258_True.Value)));
+          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("variable", (args) => CreateSyntaxNode(false, true, nameof(variable), args), new Lazy<IParser<CharToken>>(() => _keyword_1553458814_True.Value)));
 
         public static Lazy<IParser<CharToken, SyntaxNode>> number =
-          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("number", (args) => CreateSyntaxNode(false, true, nameof(number), args), new Lazy<IParser<CharToken>>(() => _keyword_297778631_True.Value)));
+          new Lazy<IParser<CharToken, SyntaxNode>>(() => Parser.Sequence<CharToken, SyntaxNode>("number", (args) => CreateSyntaxNode(false, true, nameof(number), args), new Lazy<IParser<CharToken>>(() => _keyword_415174658_True.Value)));
 
-        public static Lazy<IParser<CharToken, string>> _keyword_1654928515_True =
-          new Lazy<IParser<CharToken, string>>(() => Parser.String("<<", true).Cached(1654928515));
+        public static Lazy<IParser<CharToken, string>> _keyword_1437212064_True =
+          new Lazy<IParser<CharToken, string>>(() => Parser.String("<<", true).Cached(1437212064));
 
-        public static Lazy<IParser<CharToken, string>> _keyword_421614407_True =
-          new Lazy<IParser<CharToken, string>>(() => Parser.String(">>", true).Cached(421614407));
+        public static Lazy<IParser<CharToken, string>> _keyword_1434257148_True =
+          new Lazy<IParser<CharToken, string>>(() => Parser.String(">>", true).Cached(1434257148));
 
-        public static Lazy<IParser<CharToken, string>> _keyword_825600993_True =
-          new Lazy<IParser<CharToken, string>>(() => Parser.String("<=", true).Cached(825600993));
+        public static Lazy<IParser<CharToken, string>> _keyword_1290577619_True =
+          new Lazy<IParser<CharToken, string>>(() => Parser.String("<=", true).Cached(1290577619));
 
-        public static Lazy<IParser<CharToken, string>> _keyword_1026637572_True =
-          new Lazy<IParser<CharToken, string>>(() => Parser.String(">=", true).Cached(1026637572));
+        public static Lazy<IParser<CharToken, string>> _keyword_256657930_True =
+          new Lazy<IParser<CharToken, string>>(() => Parser.String(">=", true).Cached(256657930));
 
-        public static Lazy<IParser<CharToken, string>> _keyword_620876394_True =
-          new Lazy<IParser<CharToken, string>>(() => Parser.String("!=", true).Cached(620876394));
+        public static Lazy<IParser<CharToken, string>> _keyword_1121862642_True =
+          new Lazy<IParser<CharToken, string>>(() => Parser.String("!=", true).Cached(1121862642));
 
-        public static Lazy<IParser<CharToken, string>> _keyword_864074195_True =
-          new Lazy<IParser<CharToken, string>>(() => Parser.String("==", true).Cached(864074195));
+        public static Lazy<IParser<CharToken, string>> _keyword_1580983070_True =
+          new Lazy<IParser<CharToken, string>>(() => Parser.String("==", true).Cached(1580983070));
 
-        public static Lazy<IParser<CharToken, string>> _keyword_1075906301_True =
-          new Lazy<IParser<CharToken, string>>(() => Parser.String("&&", true).Cached(1075906301));
+        public static Lazy<IParser<CharToken, string>> _keyword_1242243799_True =
+          new Lazy<IParser<CharToken, string>>(() => Parser.String("&&", true).Cached(1242243799));
 
-        public static Lazy<IParser<CharToken, string>> _keyword_677592720_True =
-          new Lazy<IParser<CharToken, string>>(() => Parser.String("||", true).Cached(677592720));
+        public static Lazy<IParser<CharToken, string>> _keyword_582333413_True =
+          new Lazy<IParser<CharToken, string>>(() => Parser.String("||", true).Cached(582333413));
 
-        public static Lazy<IParser<CharToken, string>> _keyword_557789934_True =
-          new Lazy<IParser<CharToken, string>>(() => Parser.String("++", true).Cached(557789934));
+        public static Lazy<IParser<CharToken, string>> _keyword_1425623108_True =
+          new Lazy<IParser<CharToken, string>>(() => Parser.String("++", true).Cached(1425623108));
 
-        public static Lazy<IParser<CharToken, string>> _keyword_1077892703_True =
-          new Lazy<IParser<CharToken, string>>(() => Parser.String("--", true).Cached(1077892703));
+        public static Lazy<IParser<CharToken, string>> _keyword_236175257_True =
+          new Lazy<IParser<CharToken, string>>(() => Parser.String("--", true).Cached(236175257));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_1699417474_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char('?', true).Cached(1699417474));
+        public static Lazy<IParser<CharToken, char>> _keyword_144107524_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char('?', true).Cached(144107524));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_1389587909_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char(':', true).Cached(1389587909));
+        public static Lazy<IParser<CharToken, char>> _keyword_1552242596_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char(':', true).Cached(1552242596));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_831473964_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char('*', true).Cached(831473964));
+        public static Lazy<IParser<CharToken, char>> _keyword_64525627_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char('*', true).Cached(64525627));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_697127080_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char('/', true).Cached(697127080));
+        public static Lazy<IParser<CharToken, char>> _keyword_1998404296_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char('/', true).Cached(1998404296));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_2106348314_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char('%', true).Cached(2106348314));
+        public static Lazy<IParser<CharToken, char>> _keyword_1761918440_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char('%', true).Cached(1761918440));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_1371270433_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char('+', true).Cached(1371270433));
+        public static Lazy<IParser<CharToken, char>> _keyword_2058483605_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char('+', true).Cached(2058483605));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_1919522576_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char('-', true).Cached(1919522576));
+        public static Lazy<IParser<CharToken, char>> _keyword_796676709_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char('-', true).Cached(796676709));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_1333369729_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char('<', true).Cached(1333369729));
+        public static Lazy<IParser<CharToken, char>> _keyword_17673215_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char('<', true).Cached(17673215));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_2015880819_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char('>', true).Cached(2015880819));
+        public static Lazy<IParser<CharToken, char>> _keyword_396669534_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char('>', true).Cached(396669534));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_1480909061_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char('&', true).Cached(1480909061));
+        public static Lazy<IParser<CharToken, char>> _keyword_1259555743_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char('&', true).Cached(1259555743));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_158453521_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char('^', true).Cached(158453521));
+        public static Lazy<IParser<CharToken, char>> _keyword_1774109070_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char('^', true).Cached(1774109070));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_1487637857_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char('|', true).Cached(1487637857));
+        public static Lazy<IParser<CharToken, char>> _keyword_1812504499_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char('|', true).Cached(1812504499));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_1437607488_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char('[', true).Cached(1437607488));
+        public static Lazy<IParser<CharToken, char>> _keyword_364947234_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char('[', true).Cached(364947234));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_523116841_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char(']', true).Cached(523116841));
+        public static Lazy<IParser<CharToken, char>> _keyword_1365747384_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char(']', true).Cached(1365747384));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_1794083400_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char('(', true).Cached(1794083400));
+        public static Lazy<IParser<CharToken, char>> _keyword_523898322_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char('(', true).Cached(523898322));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_542649374_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char(')', true).Cached(542649374));
+        public static Lazy<IParser<CharToken, char>> _keyword_414244986_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char(')', true).Cached(414244986));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_598395658_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char('!', true).Cached(598395658));
+        public static Lazy<IParser<CharToken, char>> _keyword_1921598536_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char('!', true).Cached(1921598536));
 
-        public static Lazy<IParser<CharToken, char>> _keyword_1800071565_True =
-          new Lazy<IParser<CharToken, char>>(() => Parser.Char('~', true).Cached(1800071565));
+        public static Lazy<IParser<CharToken, char>> _keyword_1750419029_True =
+          new Lazy<IParser<CharToken, char>>(() => Parser.Char('~', true).Cached(1750419029));
 
-        public static Lazy<IParser<CharToken, string>> _keyword_1175017254_True =
-          new Lazy<IParser<CharToken, string>>(() => Parser.Regex("[0-9]+", true).Cached(1175017254));
+        public static Lazy<IParser<CharToken, string>> _keyword_1553458814_True =
+          new Lazy<IParser<CharToken, string>>(() => Parser.Regex("[a-zA-Z_][a-zA-Z0-9_\\$]*", true).Cached(1553458814));
 
-        public static Lazy<IParser<CharToken, string>> _keyword_1410453258_True =
-          new Lazy<IParser<CharToken, string>>(() => Parser.Regex("[a-zA-Z_][a-zA-Z0-9_\\$]*", true).Cached(1410453258));
-
-        public static Lazy<IParser<CharToken, string>> _keyword_297778631_True =
-          new Lazy<IParser<CharToken, string>>(() => Parser.Regex("([0-9]*[.])?[0-9]+", true).Cached(297778631));
-
+        public static Lazy<IParser<CharToken, string>> _keyword_415174658_True =
+          new Lazy<IParser<CharToken, string>>(() => Parser.Regex("([0-9]*[.])?[0-9]+", true).Cached(415174658));
 
     }
 }
