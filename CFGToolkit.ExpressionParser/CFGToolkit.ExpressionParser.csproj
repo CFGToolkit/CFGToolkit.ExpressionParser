@@ -15,12 +15,12 @@ Support for C language expressions</Description>
     <PackageTags></PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <Version>1.0.0-alfa-03</Version>
+    <Version>1.0.0-alfa-04</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="CFGToolkit.AST" Version="1.0.0-beta-6" />
-    <PackageReference Include="CFGToolkit.ParserCombinator" Version="1.0.0-beta-13" />
+    <PackageReference Include="CFGToolkit.ParserCombinator" Version="1.0.0-beta-15" />
   </ItemGroup>
 
 </Project>
