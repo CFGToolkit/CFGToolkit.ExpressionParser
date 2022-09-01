@@ -32,7 +32,11 @@ namespace CFGToolkit.ExpressionParser.Tests
                 new object[] { @"!(a[1] * 3 == 4)" },
                 new object[] { @"!false" },
                 new object[] { @"!true" },
-                new object[] { @"(1 == 2) || (3 == 3)" }
+                new object[] { @"(1 == 2) || (3 == 3)" },
+                new object[] { @"(1 != 3) && (2 != 5)" },
+                new object[] { @"(int)1.3" },
+                new object[] { @"(char)13" },
+                new object[] { @"(float)1.5" }
         };
     }
 }
