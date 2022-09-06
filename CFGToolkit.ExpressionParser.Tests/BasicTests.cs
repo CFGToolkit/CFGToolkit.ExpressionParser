@@ -19,6 +19,7 @@ namespace CFGToolkit.ExpressionParser.Tests
                 new object[] { @"5++" },
                 new object[] { @"x++" },
                 new object[] { @"--x" },
+                new object[] { @" --x" },
                 new object[] { @"+1+1" },
                 new object[] { @"-1+1" },
                 new object[] { @"2*3+1" },
@@ -36,7 +37,14 @@ namespace CFGToolkit.ExpressionParser.Tests
                 new object[] { @"(1 != 3) && (2 != 5)" },
                 new object[] { @"(int)1.3" },
                 new object[] { @"(char)13" },
-                new object[] { @"(float)1.5" }
+                new object[] { @"(float)1.5" },
+                new object[] { @" (unsigned char) -2 " },
+                new object[] { @" sqrt(2.3) " },
+                new object[] { @" (int)(char)-1000 " },
+                new object[] { @" &x" },
+                new object[] { @" x " },
+                new object[] { @" (unsigned long) 1 " },
+                new object[] { @" max(2,3) * 4 - 1 " }
         };
     }
 }

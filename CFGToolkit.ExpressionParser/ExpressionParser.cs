@@ -9,7 +9,18 @@ namespace CFGToolkit.ExpressionParser
         {
             if (language == ExpressionLanguage.C)
             {
-                return Languages.C.ExpressionParser.expression.Value.End().Parse(expression).SingleOrDefault();
+                var result = Languages.C.ExpressionParser.expression.Value.Token().End().TryParse(expression);
+
+                if (!result.IsSuccessful)
+                {
+                    throw new InvalidOperationException("Failed to parse");
+                }
+                if (result.Values.Count > 1)
+                {
+                    throw new InvalidOperationException("Problem with parsing");
+                }
+
+                return result.Values.FirstOrDefault()?.Value as SyntaxNode;
             }
 
             throw new InvalidOperationException("Unsupported language");
