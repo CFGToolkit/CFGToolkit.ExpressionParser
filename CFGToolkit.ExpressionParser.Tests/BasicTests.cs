@@ -41,7 +41,6 @@ namespace CFGToolkit.ExpressionParser.Tests
                 new object[] { @" (unsigned char) -2 " },
                 new object[] { @" sqrt(2.3) " },
                 new object[] { @" (int)(char)-1000 " },
-                new object[] { @" &x" },
                 new object[] { @" x " },
                 new object[] { @" (unsigned long) 1 " },
                 new object[] { @" max(2,3) * 4 - 1 " }
